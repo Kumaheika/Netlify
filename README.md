@@ -1,0 +1,2 @@
+# Netlify
+Cursor to Netlify
