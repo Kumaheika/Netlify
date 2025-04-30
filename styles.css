@@ -1,0 +1,127 @@
+/* 我的報名部分樣式 */
+.my-registrations-section {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+.registrations-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.filter-box select {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.registrations-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.no-registrations {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+.no-registrations i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.no-registrations p {
+    margin-bottom: 1.5rem;
+}
+
+.registrations-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.registration-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.registration-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.registration-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.registration-info p {
+    margin: 0;
+    color: #666;
+}
+
+.registration-status {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.status-upcoming {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.status-completed {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-cancelled {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+@media (max-width: 768px) {
+    .registrations-controls {
+        flex-direction: column;
+    }
+    
+    .registration-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+} 

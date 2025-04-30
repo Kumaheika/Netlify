@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的報名 - 城市探索者</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>城市探索者</h1>
+                <p>Run & Explore</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="index.html#events">活動列表</a></li>
+                <li><a href="index.html#about">關於我們</a></li>
+                <li><a href="index.html#contact">聯絡我們</a></li>
+                <li><a href="my-registrations.html" class="active">我的報名</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="my-registrations-section">
+            <div class="container">
+                <h2>我的報名</h2>
+                <div class="registrations-controls">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="搜尋活動名稱...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filter-box">
+                        <select id="status-filter">
+                            <option value="all">所有狀態</option>
+                            <option value="upcoming">即將到來</option>
+                            <option value="completed">已完成</option>
+                            <option value="cancelled">已取消</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="registrations-container">
+                    <div class="no-registrations">
+                        <i class="fas fa-calendar-times"></i>
+                        <p>您目前沒有任何報名記錄</p>
+                        <a href="index.html#events" class="btn">瀏覽活動</a>
+                    </div>
+                    <div class="registrations-list">
+                        <!-- 報名記錄將通過 JavaScript 動態添加 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 城市探索者. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

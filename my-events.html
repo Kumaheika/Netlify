@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的報名 - 城市探索者</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>城市探索者</h1>
+                <p>Run & Explore</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#events">活動列表</a></li>
+                <li><a href="index.html#about">關於我們</a></li>
+                <li><a href="index.html#contact">聯絡我們</a></li>
+                <li><a href="my-events.html" class="active">我的報名</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="my-events">
+            <div class="container">
+                <h1>我的報名記錄</h1>
+                <div id="registrations-list">
+                    <!-- 報名記錄將在這裡動態生成 -->
+                </div>
+                <div id="no-registrations" class="no-registrations">
+                    <i class="fas fa-running"></i>
+                    <p>您還沒有報名任何活動</p>
+                    <a href="index.html#events" class="cta-button">查看活動</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 城市探索者. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/my-events.js"></script>
+</body>
+</html> 
